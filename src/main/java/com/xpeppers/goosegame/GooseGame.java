@@ -5,12 +5,12 @@ public class GooseGame {
 	private String activePlayers = "";
 
 	public String add(String player) {
-		String separator = separato();
+		String separator = separator();
 		activePlayers += separator +  player;
 		return "Giocatori: " + activePlayers;
 	}
 
-	private String separato() {
+	private String separator() {
 		String separator = ", ";
 		if (activePlayers.isEmpty()) {
 			separator = "";
